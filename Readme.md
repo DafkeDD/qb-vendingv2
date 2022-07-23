@@ -1,7 +1,9 @@
 Discord - https://discord.gg/XPuqBVtyqX
 
-# QB-VENDING for qbcore framkework
+rename resource name to qb-vending
 
+# QB-VENDING V2 for qbcore framkework
+# USE EITHER THIS VERSION OR MY OTHER ONE. DO NOT USE BOTH TOGETHER!
  
 ## Please note
 
