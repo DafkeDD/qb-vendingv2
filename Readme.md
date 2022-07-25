@@ -1,9 +1,7 @@
 Discord - https://discord.gg/XPuqBVtyqX
 
-rename resource name to qb-vending
+# QB-VENDING for qbcore framkework
 
-# QB-VENDING V2 for qbcore framkework
-# USE EITHER THIS VERSION OR MY OTHER ONE. DO NOT USE BOTH TOGETHER!
  
 ## Please note
 
@@ -63,4 +61,248 @@ qb-menu - https://github.com/qbcore-framework/qb-menu
 ## Insert Contents of @vending/Images into @qb-inventory/HTML/Images
 
 
-## Insert relevant info into qb-smallresources/consumeables
+## Insert into qb-smallresources/server/consumeables
+
+```
+------qb-vending
+
+QBCore.Functions.CreateUseableItem("release-green", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("release-blue", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("release-pink", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("supersalt-chips", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("crinkle-paprika", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("bigcheese-chips", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("stickyribs-chips", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("saltsauce-chips", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("crinkle-habanero", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("zebrabar", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("meteorite-bar", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("salty-nothings", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("captains-log", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("candybox-red", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("candybox-cream", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("candybox-green", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("candybox-brown", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("raine-water", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("regular-coffee", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("latte-machiatto", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("espresso", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("ecola", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("sprunk", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("orang-o-tang", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+QBCore.Functions.CreateUseableItem("lemonade-can", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Drink", src, item.name)
+    end
+end)
+
+```
+
+## insert into qb-smallresources/config/consumabeseat
+
+
+```
+["crinkle-paprika"] = math.random(35, 54),
+    ["crinkle-habanero"] = math.random(35, 54),
+    ["saltsauce-chips"] = math.random(35, 54),
+    ["supersalt-chips"] = math.random(35, 54),
+    ["bigcheese-chips"] = math.random(35, 54),
+    ["stickyribs-chips"] = math.random(35, 54),
+    ["meteorite-bar"] = math.random(35, 54),
+    ["release-green"] = math.random(35, 54),
+    ["release-blue"] = math.random(35, 54),
+    ["release-pink"] = math.random(35, 54),
+    ["candybox-red"] = math.random(35, 54),
+    ["candybox-brown"] = math.random(35, 54),
+    ["candybox-cream"] = math.random(35, 54),
+    ["candybox-green"] = math.random(35, 54),
+    ["pnq-candybox"] = math.random(35, 54),
+    ["captains-log"] = math.random(35, 54),
+    ["salty-nothings"] = math.random(35, 54),
+    ["zebrabar"] = math.random(35, 54),
+    
+	```
+
+## insert into qb-smallresources/config/consumablesdrink
+```
+ ["ecola"] = math.random(40, 50),
+    ["sprunk"] = math.random(40, 50),
+    ["orang-o-tang"] = math.random(40, 50),
+    ["lemonade-can"] = math.random(40, 50),
+    ["raine-water"] = math.random(40, 50),
+    ["regular-coffee"] = math.random(40, 50),
+    ["espresso"] = math.random(40, 50),
+    ["latte-machiatto"] = math.random(40, 50),
+    
+	```
+	
